@@ -1,0 +1,10 @@
+x=0
+y=0
+passo = 0
+sinal = 1
+for p in range (20):
+  if p <= passo**2: y=y+sinal
+  if p == passo**2: sinal= -1*sinal
+  if p > passo and p <= passo**2 + passo: x=x+sinal
+  if p == passo**2: sinal=-1*sinal
+print (x,y)

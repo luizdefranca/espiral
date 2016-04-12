@@ -1,0 +1,17 @@
+lista=[]
+def buscabin(lista, n):
+    esquerda=0 # define o indice inicial do menor valor na lista
+    direita = len(lista) -1 # define o indice inicial do maior valor na lista
+    while esquerda <= direita:
+        medio=(esquerda+direita)//2
+        if lista[medio]== n:
+            return n
+        if n > lista[medio]: 
+            esquerda= medio +1
+        else: 
+            direita = esquerda   
+    else:
+        return False
+
+#def imprimir(esquerda, direita, medio, lista):
+#   for numero in lista:
